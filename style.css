@@ -1,0 +1,185 @@
+/*
+    Site Para Postar Todos Os Progressos do Game
+*/
+
+/* Importação (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.Container {
+    margin: 0 auto;
+    background-color: rgba(97, 16, 172, 0.625);
+}
+
+#logo img {
+    width: 100%;
+    width: 300px;
+    width: min(90vw, 150px);
+    margin-top: 5px;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c6bcbc;
+}
+
+#topo img{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: min(90vw, 150px);
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Cabeçalho */
+header{
+    height: 70px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #921e92;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px){ /* Tamanho de Tela de Celular */
+    body{
+        background-color: rgb(201, 85, 178);
+    }
+    /* Layout */
+    .Container {
+        max-width: 540px;
+    }
+    #logo img {
+        width: 100%;
+        width: 300px;
+        width: min(90vw, 150px);
+    }
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px){ /* Tamanho de Tela de Tablet */
+    body{
+        background-color: rgb(174, 13, 142);
+    }
+    /* Layout */
+    .Container {
+        max-width: 720px;
+    }
+    #logo img {
+        width: 100%;
+        width: 300px;
+        width: min(90vw, 200px);
+    }
+    #topo img{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: min(90vw, 200px);
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 80px;
+    }
+
+    nav ul {
+        top: 80px;
+    }
+}
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px){ /* Tamanho de Tela de Tablet */
+    body{
+        background-color: rgb(192, 36, 184);
+    }
+    /* Layout */
+    .Container {
+        max-width: 960px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 30px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: #343538;
+    }
+
+    nav ul li a:hover {
+        color: #ff00ea;
+    }
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px){ /* Tamanho de Tela de Tablet */
+    body{
+        background-color: #ffa5f6;
+    }
+    .Container {
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 100px;
+    }
+
+    nav ul {
+        margin-top: 50px;
+    }
+}
