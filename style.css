@@ -20,7 +20,6 @@ body {
 /* Layout */
 .Container {
     margin: 0 auto;
-    background-color: rgba(97, 16, 172, 0.625);
 }
 
 #logo img {
@@ -96,18 +95,28 @@ nav ul li a {
 
 /* Destaque */
 main {
-    height: 75vh;
+    height: 45vh;
     background: url(img/baner.png);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 main h1 {
-    font-size: 2.5em;
+    font-size: 2.0em;
     color: 	#ff00d0;
 }
 
 main h2 {
-    font-size: 1em;
+    font-size: 0.9em;
+    color: 	#c300ff;
+    margin: 20px 0px 50px 0px;
+}
+
+main h1, main h2 {
+    text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -119,6 +128,20 @@ main h2 {
     .Container {
         max-width: 540px;
     }
+
+    /* Destaque */
+    main {
+        height: 50vh;
+    }
+
+    main h1 {
+        font-size: 2.4em;
+    }
+
+    main h2 {
+        font-size: 0.9em;
+    }
+
     #logo img {
         width: 100%;
         width: 300px;
@@ -135,11 +158,26 @@ main h2 {
     .Container {
         max-width: 720px;
     }
+
+    /* Destaque */
+    main {
+        height: 55vh;
+    }
+
+    main h1 {
+        font-size: 2.5em;
+    }
+
+    main h2 {
+        font-size: 1em;
+    }
+
     #logo img {
         width: 100%;
         width: 300px;
         width: min(90vw, 200px);
     }
+
     #topo img{
         position: fixed;
         right: 10px;
@@ -165,6 +203,11 @@ main h2 {
     /* Layout */
     .Container {
         max-width: 960px;
+    }
+
+    /* Destaque */
+    main {
+        height: 55vh;
     }
 
     label {
@@ -199,6 +242,19 @@ main h2 {
     }
     .Container {
         max-width: 1140px;
+    }
+
+    /* Destaque */
+    main {
+        height: 50vh;
+    }
+
+    main h1 {
+        font-size: 2.8em;
+    }
+
+    main h2 {
+        font-size: 1.3em;
     }
 
     /* Cabeçalho */
