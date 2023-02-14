@@ -104,6 +104,7 @@ main {
     height: 45vh;
     background: url(img/baner.png);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,6 +134,7 @@ main h1, main h2 {
     padding: 50px 0px;
     background: url(img/banerunity.png);
     background-size: cover;
+    background-position: center;
 }
 
 #destaqueSobre {
@@ -297,5 +299,19 @@ main h1, main h2 {
 
     nav ul {
         margin-top: 50px;
+    }
+
+    /* Sobre */
+    #sobre {
+        background-attachment: fixed;
+    }
+
+    #destaqueSobre {
+        display: inline;
+    }
+
+    #destaqueSobre img {
+        border-radius: 10%;
+        margin-right: 30px;
     }
 }
