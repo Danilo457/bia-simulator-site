@@ -41,6 +41,11 @@ body {
     align-items: center;
 }
 
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
+
 .Botao { /* Button que leva para um Link da Play List do YouTube */
     text-decoration: none;
     color: rgb(57, 0, 63);
@@ -72,7 +77,10 @@ header{
 
 label {
     font-size: 3em;
-    padding-right: 15px;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgb(0,0,0,0.2);
 }
 
 nav ul {
@@ -158,6 +166,24 @@ main h1, main h2 {
     margin-right: 10px;
 }
 
+#onepage {
+    padding: 50px 10px;
+}
+
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+#video iframe {
+    width: 400px;
+    height: 225px;
+    border: 0;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){ /* Tamanho de Tela de Celular */
     /* Layout */
@@ -186,6 +212,11 @@ main h1, main h2 {
 
     .TopicosSobre img {
         width: min(90vw, 120px);
+    }
+
+    #video iframe {
+        width: 450px;
+        height: 253px;
     }
 }
 
@@ -229,6 +260,11 @@ main h1, main h2 {
 
     nav ul {
         top: 80px;
+    }
+
+    #video iframe {
+        width: 500px;
+        height: 281px;
     }
 }
 
@@ -313,5 +349,15 @@ main h1, main h2 {
     #destaqueSobre img {
         border-radius: 10%;
         margin-right: 30px;
+    }
+
+    #video iframe {
+        width: 600px;
+        height: 338px;
+    }
+
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
     }
 }
