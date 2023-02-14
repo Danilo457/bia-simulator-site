@@ -13,6 +13,7 @@
 }
 
 body {
+    background-color: #b89fb8c9; /* Cor (Branca) de Todo o Site */
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
@@ -33,6 +34,11 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #c6bcbc;
+}
+
+.Flex2 {
+    display: flex;
+    align-items: center;
 }
 
 .Botao { /* Button que leva para um Link da Play List do YouTube */
@@ -119,11 +125,39 @@ main h1, main h2 {
     text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
+.TopicosSobre img {
+    width: min(90vw, 100px);
+}
+
+#sobre {
+    padding: 50px 0px;
+    background: url(img/banerunity.png);
+    background-size: cover;
+}
+
+#destaqueSobre {
+    display: none;
+}
+
+#textoSobre {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoSobre h2 {
+    margin-bottom: 10px;
+}
+
+.TopicosSobre {
+    margin-top: 20px;
+}
+
+.TopicosSobre img {
+    margin-right: 10px;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){ /* Tamanho de Tela de Celular */
-    body{
-        background-color: rgb(201, 85, 178);
-    }
     /* Layout */
     .Container {
         max-width: 540px;
@@ -147,13 +181,14 @@ main h1, main h2 {
         width: 300px;
         width: min(90vw, 150px);
     }
+
+    .TopicosSobre img {
+        width: min(90vw, 120px);
+    }
 }
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px){ /* Tamanho de Tela de Tablet */
-    body{
-        background-color: rgb(174, 13, 142);
-    }
     /* Layout */
     .Container {
         max-width: 720px;
@@ -197,9 +232,6 @@ main h1, main h2 {
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){ /* Tamanho de Tela de Tablet */
-    body{
-        background-color: rgb(192, 36, 184);
-    }
     /* Layout */
     .Container {
         max-width: 960px;
@@ -233,13 +265,14 @@ main h1, main h2 {
     nav ul li a:hover {
         color: #ff00ea;
     }
+
+    .TopicosSobre img {
+        width: min(90vw, 150px);
+    }
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){ /* Tamanho de Tela de Tablet */
-    body{
-        background-color: #ffa5f6;
-    }
     .Container {
         max-width: 1140px;
     }
