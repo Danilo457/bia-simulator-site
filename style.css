@@ -46,6 +46,20 @@ body {
     flex-direction: column;
 }
 
+.Flex3 img {
+    display: none;
+    width: min(50vw, 150px);
+}
+
+.Flex3 h1 {
+    display: none;
+    font-size: 1.0em;
+}
+
+.Flex3 a {
+    display: none;
+}
+
 .Botao { /* Button que leva para um Link da Play List do YouTube */
     text-decoration: none;
     color: rgb(57, 0, 63);
@@ -55,20 +69,6 @@ body {
     padding: 10px 40px;
     border: 2px solid #000;
     border-radius: 25px;
-}
-
-.Botao2 { /* Button que leva para um Link da Play List do YouTube */
-    text-decoration: none;
-    color: #000;
-    font-size: 1.3em;
-    font-weight: 700;
-    background-color: #ffa5f6;
-    padding: 10px 40px;
-    border: 2px solid #000;
-    border-radius: 25px;
-
-    display: flex;
-    margin: 2px;
 }
 
 table tbody tr:hover {
@@ -82,8 +82,13 @@ table tbody tr {
     padding: 1rem 2rem;
 }
 
-.vs {
+.vs ,.datecl {
+    color: #000;
     border: 2px solid #000;
+}
+
+.datepc {
+    display: none;
 }
 
 #topo img{
@@ -213,6 +218,31 @@ main h1, main h2 {
     border: 0;
 }
 
+#wireframe {
+    padding: 50px 0px;
+    background: url(img/banerunity.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#textoWire {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoWire h2 { /* Parte do Titulo "Download da vs mais Recente" */
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#textoWire p {
+    margin-bottom: 40px;
+}
+
+#contato img {
+    display: none;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){ /* Tamanho de Tela de Celular */
     /* Layout */
@@ -336,6 +366,15 @@ main h1, main h2 {
     .TopicosSobre img {
         width: min(90vw, 150px);
     }
+
+    /* Sobre */
+    #sobre { /* Image do nackground de Cima */
+        background-attachment: fixed;
+    }
+
+    #wireframe { /* Image do nackground de Baixo */
+        background-attachment: fixed;
+    }
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -366,11 +405,6 @@ main h1, main h2 {
         margin-top: 50px;
     }
 
-    /* Sobre */
-    #sobre {
-        background-attachment: fixed;
-    }
-
     #destaqueSobre {
         display: inline;
     }
@@ -388,5 +422,24 @@ main h1, main h2 {
     .Flex3 {
         flex-direction: row;
         align-items: center;
+    }
+
+    .Flex3 img, .Flex3 h1, .Flex3 a {
+        display: inline;
+    }
+    
+    #contato img {
+        width: min(50vw, 200px);
+        display: inline;
+    }
+
+    .datecl {
+        display: none;
+    }
+
+    .datepc {
+        display: inline;
+        color: #000;
+        border: 2px solid #000;
     }
 }
