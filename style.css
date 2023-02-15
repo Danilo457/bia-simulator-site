@@ -60,6 +60,12 @@ body {
     display: none;
 }
 
+.Flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .Botao { /* Button que leva para um Link da Play List do YouTube */
     text-decoration: none;
     color: rgb(57, 0, 63);
@@ -96,6 +102,37 @@ table tbody tr {
     right: 10px;
     bottom: 10px;
     width: min(90vw, 150px);
+}
+
+/* Cartões */
+.Card {
+    margin-top: 25px;
+    width: min(100vw, 350px);
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img {
+    width: min(90vw, 100px);
+    border-radius: 25px 0px 25px 0px;
+}
+
+.Card h3 {
+    margin-top: 15px;
+}
+
+.Card p {
+    text-align: left;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.Card a {
+    padding: 10px 100px;
+    color: #fff;
+    background-color: rgb(100, 5, 5);
 }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -218,7 +255,7 @@ main h1, main h2 {
     border: 0;
 }
 
-#wireframe {
+#download {
     padding: 50px 0px;
     background: url(img/banerunity.png);
     background-size: cover;
@@ -241,6 +278,28 @@ main h1, main h2 {
 
 #contato img {
     display: none;
+}
+
+/* Conteúdo */
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#todos {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#todos a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.25em;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -372,7 +431,7 @@ main h1, main h2 {
         background-attachment: fixed;
     }
 
-    #wireframe { /* Image do nackground de Baixo */
+    #download { /* Image do nackground de Baixo */
         background-attachment: fixed;
     }
 }
