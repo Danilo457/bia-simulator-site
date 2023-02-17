@@ -372,6 +372,10 @@ footer {
     margin-bottom: 25px;
 }
 
+#Contador {
+    margin-bottom: 25px;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){ /* Tamanho de Tela de Celular */
     /* Layout */
@@ -405,6 +409,10 @@ footer {
     #video iframe {
         width: 450px;
         height: 253px;
+    }
+
+    #Contador {
+        margin-bottom: 0px;
     }
 
     /* Rodapé */
