@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #b89fb8c9; /* Cor (Branca) de Todo o Site */
     font-family: 'Open Sans', sans-serif;
@@ -64,6 +68,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.Flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Flex6 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .Botao { /* Button que leva para um Link da Play List do YouTube */
@@ -276,8 +291,16 @@ main h1, main h2 {
     margin-bottom: 40px;
 }
 
-#contato img {
-    display: none;
+#contato img { /* Contado do Whatts */
+    width: min(50vw, 50px);
+}
+
+#social img { /* Images das Redes Sociais */
+    width: min(50vw, 50px);
+}
+
+#endereco img {
+    width: min(50vw, 50px);
 }
 
 /* Conteúdo */
@@ -300,6 +323,53 @@ main h1, main h2 {
     color: #000;
     font-weight: 700;
     font-size: 1.25em;
+}
+
+/* rodapé */
+address {
+    padding: 20px 10px 70px 10px; /*padding: 35px 10px 50px 10px;*/
+    background: url(img/banerlojad.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+.LojaD h1 {
+    margin: 40px 0px 100px 0px;
+    text-align: center;
+}
+
+#iconeLocal {
+    display: none;
+}
+
+#dados {
+    margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+    display: none;
+}
+
+footer {
+    padding: 50px;
+    background-color: #343538;
+    color: #fff;
+    text-align: center;
+}
+
+#social {
+    margin-bottom: 25px;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -335,6 +405,25 @@ main h1, main h2 {
     #video iframe {
         width: 450px;
         height: 253px;
+    }
+
+    /* Rodapé */
+    .Flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0;
+    }
+
+    address {
+        padding: 70px 10px 90px 10px;
+    }
+
+    .LojaD h1 {
+        margin: 50px 0px 80px 0px;
     }
 }
 
@@ -383,6 +472,15 @@ main h1, main h2 {
     #video iframe {
         width: 500px;
         height: 281px;
+    }
+
+    /* Rodapé */
+    address {
+        padding: 60px 10px 100px 10px;
+    }
+
+    .LojaD h1 {
+        margin: 10px 0px 100px 0px;
     }
 }
 
@@ -433,6 +531,19 @@ main h1, main h2 {
 
     #download { /* Image do nackground de Baixo */
         background-attachment: fixed;
+    }
+
+    /* Rodapé */
+    .Flex6 {
+        flex-direction: row-reverse;
+    }
+
+    address {
+        padding: 70px 10px 120px 10px;
+    }
+
+    .LojaD h1 {
+        margin: 50px 0px 100px 0px;
     }
 }
 
@@ -486,11 +597,6 @@ main h1, main h2 {
     .Flex3 img, .Flex3 h1, .Flex3 a {
         display: inline;
     }
-    
-    #contato img {
-        width: min(50vw, 200px);
-        display: inline;
-    }
 
     .datecl {
         display: none;
@@ -500,5 +606,22 @@ main h1, main h2 {
         display: inline;
         color: #000;
         border: 2px solid #000;
+    }
+
+    /* Rodapé */
+    #iconeLocal {
+        display: inline;
+    }
+
+    #iconeMapa {
+        display: none;
+    }
+
+    #googleMaps {
+        display: inline;
+    }
+
+    #social {
+        padding: 30px 10px 30px 10px;
     }
 }
