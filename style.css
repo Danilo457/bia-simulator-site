@@ -81,6 +81,13 @@ body {
     flex-direction: column;
 }
 
+.TitulosVS {
+    display: none;
+    font-size: 1.0em;
+
+    padding: 30px 10px 30px 10px;
+}
+
 .Botao { /* Button que leva para um Link da Play List do YouTube */
     text-decoration: none;
     color: rgb(57, 0, 63);
@@ -603,6 +610,10 @@ footer {
     }
 
     .Flex3 img, .Flex3 h1, .Flex3 a {
+        display: inline;
+    }
+
+    .TitulosVS {
         display: inline;
     }
 
