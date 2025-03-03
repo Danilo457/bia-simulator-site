@@ -227,10 +227,6 @@ main h1, main h2 {
     text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
-.TopicosSobre img {
-    width: min(90vw, 100px);
-}
-
 #sobre {
     padding: 50px 0px;
     background: url(img/banerunity.png);
@@ -238,8 +234,24 @@ main h1, main h2 {
     background-position: center;
 }
 
-#destaqueSobre {
-    display: none;
+.InfGameBia {
+    display: flex;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+/* Imagem que indiqua algo sobre o Game Bia Simulator */
+#sobreGameBiaSimulator img {
+    width: 600px; /* Largura fixa */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Imagems que indiqua oque tem em Alguns Lugares */
+#sobreGame img {
+    width: 150px; /* Largura fixa */
+    border-radius: 10px; /* Borda arredondada (opcional) */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 #textoSobre {
@@ -249,14 +261,6 @@ main h1, main h2 {
 
 #textoSobre h2 {
     margin-bottom: 10px;
-}
-
-.TopicosSobre {
-    margin-top: 20px;
-}
-
-.TopicosSobre img {
-    margin-right: 10px;
 }
 
 #onepage {
@@ -278,6 +282,13 @@ main h1, main h2 {
 }
 
 #download {
+    padding: 50px 0px;
+    background: url(img/banerunity.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#personagens {
     padding: 50px 0px;
     background: url(img/banerunity.png);
     background-size: cover;
@@ -548,6 +559,10 @@ footer {
         background-attachment: fixed;
     }
 
+    #personagens { /* Image do nackground de Baixo */
+        background-attachment: fixed;
+    }
+
     /* Rodapé */
     .Flex6 {
         flex-direction: row-reverse;
@@ -597,6 +612,11 @@ footer {
     #destaqueSobre img {
         border-radius: 10%;
         margin-right: 30px;
+    }
+
+    #sobreGameBiaSimulator img {
+        border-radius: 5%;
+        margin-right: 50px;
     }
 
     #video iframe {
