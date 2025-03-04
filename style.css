@@ -88,6 +88,52 @@ body {
     padding: 30px 10px 30px 10px;
 }
 
+/* Aba - Painel, Infoemações sobre os personagens */
+.PersonagensTal {
+    display: inline;
+    font-size: 1.0em;
+
+    padding: 30px 10px 30px 10px;
+}
+
+#PersonagensBia {
+    color: #c562d4;
+    text-align: center;
+}
+
+#PersonagensSenpai {
+    color: #4949d1;
+    text-align: center;
+}
+
+/* Aba - Panel, Personagens - Protagonista Bia */
+.PerProtagonista {
+    background-color: #e9aeed; /* Cor escura, pode trocar */
+    color: #272128;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 100px; /* Dimenções - Dos Lados */
+    padding: 20px; /* Dimenções - Cima e Baixo */
+    margin-right: 50px; /* Espaco - right */
+    margin-left: 50px; /* Espaco - left */
+    border-radius: 30px; /* Borda arredondada */
+}
+
+/* Aba - Panel, Personagens - Senpai de Bia */
+.PerSenpai {
+    background-color: #73aafc; /* Cor escura, pode trocar */
+    color: #3f1756;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 100px; /* Dimenções - Dos Lados */
+    padding: 20px; /* Dimenções - Cima e Baixo */
+    margin-right: 50px; /* Espaco - right */
+    margin-left: 50px; /* Espaco - left */
+    border-radius: 30px; /* Borda arredondada */
+}
+
 .Botao { /* Button que leva para um Link da Play List do YouTube */
     text-decoration: none;
     color: rgb(57, 0, 63);
@@ -255,7 +301,8 @@ main h1, main h2 {
 }
 
 #textoSobre {
-    color: #fff;
+    color: #ffcdf9;
+    text-align: center;
     padding: 0px 10px;
 }
 
@@ -274,6 +321,20 @@ main h1, main h2 {
 #onepage p {
     margin-bottom: 25px;
 }
+
+/* Caixa das informações do Senpai */
+#senpai {
+    padding: 30px 10px; /* Tamanho de Baixo e do Lado */
+}
+
+#senpai h2 {
+    margin-bottom: 10px;
+}
+
+#senpai p {
+    margin-bottom: 15px;
+}
+/***/
 
 #video iframe {
     width: 400px;
@@ -633,7 +694,8 @@ footer {
         display: inline;
     }
 
-    .TitulosVS {
+    /* Aba - Painel, Infoemações sobre os personagens */
+    .PersonagensTal {
         display: inline;
     }
 
