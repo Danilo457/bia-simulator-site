@@ -120,7 +120,7 @@ body {
     border-radius: 30px; /* Borda arredondada */
 }
 
-/* Aba - Panel, Personagens - Senpai de Bia */
+/* Aba - Panel, Personagens - Senpai de Bia - Dentro dos testos */
 .PerSenpai {
     background-color: #73aafc; /* Cor escura, pode trocar */
     color: #3f1756;
@@ -310,8 +310,17 @@ main h1, main h2 {
     margin-bottom: 10px;
 }
 
+#textoSobreScene {
+    color: #ffcdf9;
+    padding: 0px 10px;
+}
+
+#textoSobreScene h2 {
+    margin-bottom: 10px;
+}
+
 #onepage {
-    padding: 50px 10px;
+    padding: 50px 0px;
 }
 
 #onepage h2 {
@@ -324,7 +333,7 @@ main h1, main h2 {
 
 /* Caixa das informações do Senpai */
 #senpai {
-    padding: 30px 10px; /* Tamanho de Baixo e do Lado */
+    padding: 30px 0px; /* Tamanho de Baixo e do Lado */
 }
 
 #senpai h2 {
