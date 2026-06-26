@@ -455,8 +455,44 @@ main h1, main h2 {
     font-weight: bold; /* deixa o termo em negrito para destacar mais */
 }
 
+#TitulosPrimarios p .rosarozeado { /* Aba - lore, Base do Assunto */
+    color: rgb(232, 178, 224);
+}
+
+#TitulosPrimarios p .amarelado { /* Aba - lore, Base do Assunto */
+    color: rgb(242, 242, 118);
+    font-weight: bold; /* deixa o termo em negrito para destacar mais */
+}
+
+#TitulosPrimarios p .azulciano { /* Aba - lore, Base do Assunto */
+    color: rgb(0, 176, 240);
+}
+
+#TitulosPrimarios p .verdemorno { /* Aba - lore, Base do Assunto */
+    color: rgb(0, 176, 80);
+    font-weight: bold; /* deixa o termo em negrito para destacar mais */
+}
+
+#TitulosPrimarios p .roxoescurecido { /* Aba - lore, Base do Assunto */
+    color: rgb(151, 146, 220);
+    font-weight: bold; /* deixa o termo em negrito para destacar mais */
+}
+
+#TitulosPrimarios p .verdesmarelado { /* Aba - lore, Base do Assunto */
+    color: rgb(194, 214, 155);
+    font-weight: bold; /* deixa o termo em negrito para destacar mais */
+}
+
 #TitulosPrimarios p .brancoleve { /* Aba - lore, Base do Assunto */
     color: rgb(238, 236, 225);
+}
+
+#TitulosPrimarios p .verdeclaromel { /* Aba - lore, Base do Assunto */
+    color: rgb(146, 208, 80);
+}
+
+#TitulosPrimarios p .laranjaesbrankpele { /* Aba - lore, Base do Assunto */
+    color: rgb(251, 212, 180);
 }
 
 #TitulosPrimarios p .vermelho { /* Aba - lore, Base do Assunto */
@@ -465,6 +501,18 @@ main h1, main h2 {
 
 #TitulosPrimarios p { /* Aba - lore, Descrição do Assunto, ou O Assunto */
     color: rgb(146, 205, 220);
+}
+
+.texto-fino {
+    font-family: 'Montserrat', sans-serif; /* Aplica a nova fonte que aceita espessura ultra-fina */
+    font-weight: 300; /* Define a espessura da fonte como mais fina */
+    letter-spacing: -0.7px; /* Espremer mais o texto, para ficar melhor */
+}
+
+.texto-model1 {
+    font-family: 'Montserrat', sans-serif; /* Aplica a nova fonte que aceita espessura ultra-fina */
+    font-weight: 300; /* Define a espessura da fonte como mais fina */
+    letter-spacing: -0.3px; /* Espremer mais o texto, para ficar melhor */
 }
 
 #textoWire {
