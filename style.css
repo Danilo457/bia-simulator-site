@@ -34,6 +34,10 @@ body {
     margin-top: 5px;
 }
 
+.center { /* Centralizar qualquer texto */
+    text-align: center;
+}
+
 .Flex {
     display: flex;
     justify-content: space-between;
@@ -461,11 +465,14 @@ main h1, main h2 {
 
 #TitulosPrimarios p .amarelado { /* Aba - lore, Base do Assunto */
     color: rgb(242, 242, 118);
-    font-weight: bold; /* deixa o termo em negrito para destacar mais */
 }
 
 #TitulosPrimarios p .azulciano { /* Aba - lore, Base do Assunto */
     color: rgb(0, 176, 240);
+}
+
+#TitulosPrimarios p .azulbranco { /* Aba - lore, Base do Assunto */
+    color: rgb(198, 217, 241);
 }
 
 #TitulosPrimarios p .verdemorno { /* Aba - lore, Base do Assunto */
@@ -495,12 +502,67 @@ main h1, main h2 {
     color: rgb(251, 212, 180);
 }
 
+#TitulosPrimarios p .laranjaesbrankpelefull { /* Aba - lore, Base do Assunto */
+    color: rgb(253, 233, 217);
+}
+
 #TitulosPrimarios p .vermelho { /* Aba - lore, Base do Assunto */
     color: rgb(255, 0, 0);
 }
 
 #TitulosPrimarios p { /* Aba - lore, Descrição do Assunto, ou O Assunto */
     color: rgb(146, 205, 220);
+}
+
+.tabela-container { /* Aba - lore, Tebela de Buscas */
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+.planilha-lore { /* Aba - lore, Planilha */
+    width: 100%;
+    border-collapse: collapse; /* Une as bordas em uma linha única */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.planilha-lore th { /* Aba - lore, Estilo do Cabeçalho (Títulos da Planilha) */
+    background-color: rgb(38, 38, 38); /* Cabeçalho da Planilha */
+    color: rgb(238, 236, 225); /* Color dos Textos do Cabeçalho */
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0); /* Bordas da Planilha */
+}
+
+.planilha-lore td { /* Aba - lore, Estilo das Células de Dados */
+    padding: 3px;
+    border: 1px solid rgb(0, 0, 0); /* Bordas da Planilha */
+}
+
+.planilha-lore td.verdeclaromel { /* FORCE A COR NOS TEXTOS EM NEGRITO DENTRO DA PLANILHA */
+    background-color: rgb(54, 42, 70); /* Cabeçalho da Planilha */
+    color: rgb(146, 208, 80) !important;
+}
+
+.planilha-lore td.amarelado { /* FORCE A COR NOS TEXTOS EM NEGRITO DENTRO DA PLANILHA */
+    background-color: rgb(54, 42, 70); /* Cabeçalho da Planilha */
+    color: rgb(242, 242, 118) !important;
+}
+
+.planilha-lore td.vermelho { /* FORCE A COR NOS TEXTOS EM NEGRITO DENTRO DA PLANILHA */
+    background-color: rgb(54, 54, 54); /* Cabeçalho da Planilha */
+    color: rgb(255, 0, 0) !important;
+}
+
+.planilha-lore td.roxoesbranquisado { /* FORCE A COR NOS TEXTOS EM NEGRITO DENTRO DA PLANILHA */
+    background-color: rgb(61, 47, 79); /* Cabeçalho da Planilha */
+    color: rgb(229, 223, 236) !important;
+}
+
+.planilha-lore td.bloco-categoria { /* Bloco de Categoria (Tom verde escuro de fundo para destacar o texto verde claro) */
+    background-color: rgb(72, 56, 94); /* Verde com transparência */
+    color: rgb(251, 212, 180) !important;
 }
 
 .texto-fino {
@@ -513,6 +575,107 @@ main h1, main h2 {
     font-family: 'Montserrat', sans-serif; /* Aplica a nova fonte que aceita espessura ultra-fina */
     font-weight: 300; /* Define a espessura da fonte como mais fina */
     letter-spacing: -0.3px; /* Espremer mais o texto, para ficar melhor */
+}
+
+.texto-model2 { /* Aba - lore, Descrição do Assunto, ou O Assunto */
+    font-family: 'Montserrat', sans-serif; /* Aplica a nova fonte que aceita espessura ultra-fina */
+    font-weight: 700; /* Define a espessura da fonte como mais fina */
+    font-size: 16px; /* Tamanho da Fonte do Texto */
+    letter-spacing: -0.1px; /* Espremer mais o texto, para ficar melhor */
+}
+
+.link-com-foto { /* Container que segura o link e a imagem juntos */
+    position: relative; /* Base de posicionamento para o balão */
+    display: inline-block;
+}
+
+.link-com-foto a { /* Estilo do link em si */
+    color: rgb(0, 0, 255); /* Cor verde dos seus títulos */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link-com-foto .miniatura-balao { /* Estado padrão da miniatura: Totalmente escondida */
+    position: absolute;
+    bottom: 120%;      /* Faz aparecer logo acima do link */
+    left: 50%;         /* Centraliza em relação ao link */
+    transform: translateX(-50%) scale(0.8); /* Ajusta o centro e encolhe um pouco para o efeito */
+    width: 200px;      /* Largura fixa da miniatura */
+    height: auto;      /* Mantém a proporção da foto */
+    border: 5px solid rgb(39, 36, 29); /* Borda Color */
+    border-radius: 10px; /* Cantos arredondados estilo Word moderno */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    
+    opacity: 0;         /* Torna invisível */
+    pointer-events: none; /* Evita que o mouse trave na imagem sem querer */
+    transition: all 0.3s ease; /* Faz ela aparecer de forma suave em 0.3 segundos */
+    z-index: 10;        /* Garante que ela vai ficar na frente de outros textos */
+}
+
+.link-com-foto:hover .miniatura-balao { /* A mágica acontece aqui: Quando passa o mouse no container, a imagem aparece */
+    opacity: 1;         /* Torna visível */
+    transform: translateX(-50%) scale(1); /* Volta ao tamanho normal criando um efeito de "zoom" */
+}
+
+.modal-imagem { /* Estilo da janela flutuante padrão */
+    border: none;
+    background: transparent;
+    padding: 0;
+    max-width: 85vw; /* Define a largura máxima em 85% da tela */
+    max-height: 85vh; /* Define a altura máxima em 85% da tela */
+    outline: none;
+
+    /* COMANDOS DE CENTRALIZAÇÃO ABSOLUTA NO MEIO DA TELA */
+    position: fixed;     /* Trava a posição em relação à tela */
+    top: 50%;            /* Joga o topo para o meio vertical (50%) */
+    left: 50%;           /* Joga a esquerda para o meio horizontal (50%) */
+    transform: translate(-50%, -50%); /* Recua metade do tamanho da imagem para centralizar perfeito */
+    margin: 0;           /* Zera as margens padrões que o navegador cria */
+}
+
+.modal-conteudo { /* O conteúdo dentro do modal */
+    position: relative; /* Cria a base para prender o botão dentro dele */
+    display: inline-flex; /* Faz o container se ajustar exatamente ao tamanho real da imagem */
+    justify-content: center;
+}
+
+.modal-imagem img { /* Ajusta a imagem grande para não estourar a tela */
+    display: block; /* Remove espaços vazios fantasmas abaixo da imagem */
+    width: 100%;
+    height: auto;
+    max-height: 75vh;       /* Reduzi um pouco a altura máxima para sobrar espaço para o botão embaixo */
+    object-fit: contain;
+    border: 6px solid rgb(39, 36, 29); /* Borda Color */
+    border-radius: 15px;
+}
+
+.botao-fechar { /* Botão de fechar (o X no canto superior direito) */
+    position: absolute;   /* Ativa o posicionamento livre dentro da imagem */
+    bottom: 10px;         /* Distância de 20px da borda inferior da imagem */
+    left: 50%;            /* Joga para o meio na horizontal */
+    transform: translateX(-50%); /* Garante a centralização perfeita do botão */
+    
+    background: rgba(26, 24, 20, 0.829); /* button color */
+    color: rgb(255, 255, 255); /* o 'X' color */
+    border: 2px solid rgb(0, 0, 0); /* Adiciona uma borda para destacar no fundo escuro */
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 15px; /* Dimensoies do button */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 15;          /* Garante que o botão fique na frente da imagem */
+}
+
+.botao-fechar:hover {
+    background: rgb(0, 0, 0); /* Muda color ao passar o mouse */
+    border-color: rgb(255, 255, 255);
+    transform: translateX(-50%) scale(1.05); /* Mantém centralizado e dá o zoom */
+}
+
+.modal-imagem::backdrop { /* MÁGICA: Escurece o fundo do site atrás da imagem aberta */
+    background: rgba(0, 0, 0, 0.386);
+    backdrop-filter: blur(4px); /* Opcional: deixa o fundo levemente embaçado */
 }
 
 #textoWire {
